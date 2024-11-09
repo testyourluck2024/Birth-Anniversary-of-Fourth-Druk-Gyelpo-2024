@@ -1,0 +1,119 @@
+You can add a new section above the "Upload Payment Screenshot" field with a box containing the TRC20 address. Here's how you can modify your HTML to include this feature:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Draw November 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .payment-note {
+            background-color: #f0f8ff;
+            border: 1px solid #4CAF50;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .trc20-address {
+            background-color: #e9f7ff;
+            border: 1px solid #4CAF50;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lucky Draw November 2024</h1>
+        <p>Enter your details for a chance to win $1000 on the Birth Anniversary of the Fourth Druk Gyelpo!</p>
+        
+        <!-- Payment Note Box -->
+        <div class="payment-note">
+            <p><strong>Payment: $5</strong> to win $1000! Don't miss your chance.</p>
+        </div>
+
+        <!-- TRC20 Address Box -->
+        <div class="trc20-address">
+            <p>Send payment to the following TRC20 address:</p>
+            <p><strong>TMuWGYnqYxGSXgD9sfe3m1aUfNk2JW8Aci</strong></p>
+        </div>
+
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="ticketNumber">Enter Ticket Number (A1 to A10000):</label>
+                <input type="text" id="ticketNumber" name="ticketNumber" required>
+
+                <label for="fullName">Your Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="contactNumber">Your Contact Number:</label>
+                <input type="text" id="contactNumber" name="contactNumber" required>
+
+                <label for="paymentScreenshot">Upload Payment Screenshot:</label>
+                <input type="file" id="paymentScreenshot" name="paymentScreenshot" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
+Changes:
+
+Added a new <div class="trc20-address"> right above the "Upload Payment Screenshot" field.
+
+This box contains the TRC20 address TMuWGYnqYxGSXgD9sfe3m1aUfNk2JW8Aci and instructs the user to send payment to that address.
+
+
+This will display the TRC20 address clearly for the users to make their payment.
+
