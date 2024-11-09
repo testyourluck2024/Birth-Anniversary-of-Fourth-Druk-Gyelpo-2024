@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRC20 Address</title>
+    <style>
+        .address-box {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .copy-btn {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="address-box" id="trc20Address">
+            TMuWGYnqYxGSXgD9sfe3m1aUfNk2JW8Aci
+        </div>
+        <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            var address = document.getElementById("trc20Address").textContent;
+            navigator.clipboard.writeText(address).then(function() {
+                alert("Address copied to clipboard!");
+            }, function() {
+                alert("Failed to copy address.");
+            });
+        }
+    </script>
+
+</body>
+</html>
